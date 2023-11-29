@@ -1,45 +1,44 @@
- import React, { useState } from 'react'
-import Button from './Button';
-import {BiMenu} from "react-icons/bi";
-import {RxCross2} from "react-icons/rx"
- 
- const NavBar = () => {
-  let Links = [
-    {name: "HOME",link:"/"},
-    {name: "SERVICE",link:"/"},
-    {name: "ABOUT",link:"/"},
-    {name: "BLOG'S",link:"/"},
-    {name: "CONTACT",link:"/"},
-];
-   let [open,setOpen] = useState(false);
-   return (
-     <div className='shadow-md w-full fixed top-0 left-0'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-      <div className='font-bold text-xl cursor-pointer flex items-center font-[Poppins] text-gray-800'>
-        <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-           <img name="logo" src='/assets/Logo.png' className='w-14 h-auto'/>
-        </span>
-        CISKA
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import { AiOutlineMenu } from 'react-icons/ai';
+
+const NavBar = () => {
+  const [menu, setMenu] = useState(false);
+  const handeChange = () => {
+    setMenu(!menu);
+  }
+  return (
+    <div>
+      <div className='flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+        <div className='flex flex-row space-x-4'>
+          <img src='assets\Logo.png' className='h-8 w-8 cursor-pointer'></img>
+          <Link to="/" className='font-semibold text-2xl p-1 cursor-pointer'>
+            CISKA
+          </Link>
+        </div>
+        <nav className='hidden md:flex gap-5 font-medium p-1 cursor-pointer'>
+          <Link to="Home" spy={true} smooth={true} duration={500} className=' hover: text-yellow-300 transition-all cursor-pointer '>Home</Link>
+          <Link to="About" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>About</Link>
+          <Link to="Register" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>Register</Link>
+          <Link to="works" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>Works</Link>
+          <Link to="Contact us" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
+        </nav>
+        <div className='flex md:hidden' onClick={handeChange}>
+          <div className='p-2'>
+            <AiOutlineMenu size={22} />
+          </div>
+        </div>
       </div>
-      <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
-        {open ? <RxCross2/>  : <BiMenu />}
-      </div>
-      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0
-      w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100':'top-[-490px]'} md:opacity-100`}>
-        {
-          Links.map((link)=>(
-          <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7 '>
-            <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
-          </li>
-        ))}
-        <Button>
-          Get Started
-        </Button>
-      </ul>
+      <div className={`${menu ? "translate-x-0" : "-translate-x-full"
+        } md:hidden flex flex-col absolute bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+        <Link to="Home" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>Home</Link>
+        <Link to="About" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>About</Link>
+        <Link to="Register" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>Register</Link>
+        <Link to="works" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer '>Works</Link>
+        <Link to="Contact us" spy={true} smooth={true} duration={500} className='hover: text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
       </div>
     </div>
-   )
- }
- 
- export default NavBar
- 
+  )
+}
+
+export default NavBar

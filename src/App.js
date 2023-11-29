@@ -1,12 +1,18 @@
 import './App.css';
+import Home from './Components/Home';
 import NavBar from './Components/NavBar';
 
 function App() {
   return (
     <div>
     <NavBar/>
-    <div className="bg-red-600 w-full h-screen"></div>
+    <main>
+      <div  id='home'>
+        <Home/>
+      </div>
+    </main>
     </div>
+
   );
 }
 
