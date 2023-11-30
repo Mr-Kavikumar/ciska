@@ -1,37 +1,63 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function MembersCard(props) {
-  return (
-    <div>
-    <div className='flex flex-col items-center justify-between bg-purple-400 border-2 
-    border-yellow-300 md:border-none md:w-full p-5 cursor-pointer rounded-lg '>
-      <div className='w-3/5'>
-        <img src={props.img}>
-        </img>
-      </div>
-      <div>
-        <h3>
-         {props.name}
-        </h3>
-        <p>
-            {props.job}
-        </p>
-        <p>
-            {props.institution}
-        </p>
-        <p>
-            {props.event}
-        </p>
-        <p>
-            {props.contact}
-        </p>
-        <p>
-            {props.batch}
-        </p>
-      </div>
-    </div>
-    </div>
-  )
+    return (
+        <div>
+            <div className='flex flex-col items-center justify-between bg-white border-2 
+    border-yellow-300 md:w-full p-5 cursor-pointer rounded-lg '>
+                <div className='w-4/5'>
+                    <img src={props.img}>
+                    </img>
+                </div>
+                <div className='flex flex-row my-5 justify-content space-x-5'>
+                <div>
+                <h3 className='font-semibold text-lg '>
+                        Name
+                    </h3>
+                    <p>
+                    Job
+                    </p>
+                    <p>
+                        Institution
+                    </p>
+                    <p>
+                        Event
+                    </p>
+                    <p>
+                        Contact
+                    </p>
+                    <p>
+                        Batch
+                    </p>
+                </div>
+                <div  >
+                    :<br/>:<br/>:
+                    <br/>: <br/>: <br/>:              </div>
+                <div>
+                <h3 className='font-semibold text-lg'>
+                        {props.name}
+                    </h3>
+                    <p>
+                        {props.job}
+                    </p>
+                    <p>
+                        {props.institution}
+                    </p>
+                    <p>
+                        {props.event}
+                    </p>
+                    <p>
+                        {props.contact}
+                    </p>
+                    <p>
+                        {props.batch}
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default MembersCard

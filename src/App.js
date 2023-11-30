@@ -1,8 +1,10 @@
 import './App.css';
+import ContactUs from './Components/ContactUs';
 import Home from './Components/Home';
 import Members from './Components/Members';
 import NavBar from './Components/NavBar';
 import Register from './Components/Register';
+import Works from './Components/Works';
 
 function App() {
   return (
@@ -16,7 +18,13 @@ function App() {
           <Register />
         </div>
         <div id='members'>
-          <Members />
+          <Members/>
+        </div>
+        <div id='works'>
+          <Works/>
+        </div>
+        <div id='contactus'>
+          <ContactUs/>
         </div>
       </main>
     </div>
