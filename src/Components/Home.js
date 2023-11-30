@@ -8,7 +8,7 @@ function Home() {
       <div className='md:w-2/4 text-center'>
         <h2 className='text-5xl font-semibold leading-tight'>CISKA</h2>
         <div className='flex justify-center pt-5 pb-5'>
-        <img src='assets\Logo.png' className='h-40 w-40 cursor-pointer flex justify-center  outline-yellow-300 md:hidden'></img>
+        <img src='assets\Logo.png' className='h-40 w-40 cursor-pointer flex justify-center md:hidden'></img>
         </div>
         
         <p className='text-gray-800 mt-5 text-start'>
@@ -16,15 +16,15 @@ function Home() {
             in 2008 for the well being of students who are unable to 
             pay thier education fee and for the educational institute who
             who didn't have much facility for thier students.
-            the members of this trusts includes the students of <a href='cit.edu.in'>COIMBATORE INSTITUTE OF TECHNOLOGY</a>,
+            the members of this trusts includes the students of <a href='https://www.cit.edu.in/' className='text-blue-800'>COIMBATORE INSTITUTE OF TECHNOLOGY</a>,
             JANSON ENGINEEERING COLLEGE AND TAMILNADU ENGINEERING COLLEGE
         </p>
         <Link to='' spy={true} smooth={true} duration={500}>
            <Button title="see more"/>
         </Link>
       </div>
-      <div className='sm:hidden w-full md:w-2/4 '>
-        <img src='assets\Logo.png' className='h-40 w-40 cursor-pointer flex justify-center'></img>
+      <div className='w-full md:w-2/4 hidden md:block'>
+        <img src='assets\Logo.png' className='cursor-pointer flex justify-center'></img>
       </div>
     </div>
   )

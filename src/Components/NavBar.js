@@ -10,8 +10,8 @@ const NavBar = () => {
   return (
     <div>
       <div className='flex flex-row justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-        <div className='flex flex-row space-x-4'>
-          <img src='assets\Logo.png' className='h-8 w-8 cursor-pointer'></img>
+        <div className='flex flex-row space-x-4 justify-center'>
+          <img src='assets\Logo.png' className='h-10 w-10 cursor-pointer'></img>
           <Link to="/" className='font-semibold text-2xl p-1 cursor-pointer'>
             CISKA
           </Link>
