@@ -1,9 +1,9 @@
 import React from 'react'
-// import { Link } from 'react-scroll'
-import { Link } from 'react-router-dom'
+import { Link as Link1 } from 'react-scroll'
+import {Link as Link2} from 'react-router-dom'
 import Button from './layout/Button'
 import logo from '../assets/Logo.png'
-import HomeExtended from './HomeExtended'
+
 
 function Home() {
     return (
@@ -22,9 +22,9 @@ function Home() {
                     the members of this trusts includes the students of <a href='https://www.cit.edu.in/' className='text-blue-800'>COIMBATORE INSTITUTE OF TECHNOLOGY</a>,
                     JANSON ENGINEEERING COLLEGE AND TAMILNADU ENGINEERING COLLEGE
                 </p>
-                <Link to="HomeExtended" spy={true} smooth={true} duration={500}>
+                <Link2 to='HomeExtended.js' spy={true} smooth={true} duration={500}>
                     <Button title="see more" />
-                </Link>
+                </Link2>
             </div>
             <div className='w-full md:w-2/4 hidden md:block'>
                 <img src={logo} className='cursor-pointer flex justify-center'></img>
