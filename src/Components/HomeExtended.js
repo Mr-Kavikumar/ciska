@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import logo from '../assets/Logo.png'
 
+
 function HomeExtended() {
   return (
     <div>

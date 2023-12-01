@@ -18,11 +18,11 @@ const NavBar = () => {
           </Link>
         </div>
         <nav className='hidden md:flex gap-5 font-medium p-1 cursor-pointer'>
-          <Link to="Home" spy={true} smooth={true} duration={500} className=' hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
-          <Link to="About" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>About</Link>
-          <Link to="Register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
+          <Link to="home" spy={true} smooth={true} duration={500} className=' hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
+          <Link to="members" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>About</Link>
+          <Link to="register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
           <Link to="works" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Works</Link>
-          <Link to="Contact us" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
+          <Link to="contactus" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
         </nav>
         <div className='flex md:hidden' onClick={handeChange}>
           <div className='p-2'>

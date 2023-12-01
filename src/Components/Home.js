@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+// import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import Button from './layout/Button'
 import logo from '../assets/Logo.png'
 import HomeExtended from './HomeExtended'
@@ -21,7 +22,7 @@ function Home() {
                     the members of this trusts includes the students of <a href='https://www.cit.edu.in/' className='text-blue-800'>COIMBATORE INSTITUTE OF TECHNOLOGY</a>,
                     JANSON ENGINEEERING COLLEGE AND TAMILNADU ENGINEERING COLLEGE
                 </p>
-                <Link to={HomeExtended} spy={true} smooth={true} duration={500}>
+                <Link to="HomeExtended" spy={true} smooth={true} duration={500}>
                     <Button title="see more" />
                 </Link>
             </div>
