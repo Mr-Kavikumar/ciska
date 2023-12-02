@@ -19,7 +19,7 @@ const NavBar = () => {
         </div>
         <nav className='hidden md:flex gap-5 font-medium p-1 cursor-pointer'>
           <Link to="home" spy={true} smooth={true} duration={500} className=' hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
-          <Link to="members" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>About</Link>
+          <Link to="members" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Members</Link>
           <Link to="register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
           <Link to="works" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Works</Link>
           <Link to="contactus" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
@@ -32,11 +32,11 @@ const NavBar = () => {
       </div>
       <div className={`${menu ? "translate-x-0" : "-translate-x-full"
         } md:hidden flex flex-col absolute bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
-        <Link to="Home" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
-        <Link to="About" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>About</Link>
-        <Link to="Register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
+        <Link to="home" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
+        <Link to="members" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Members</Link>
+        <Link to="register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
         <Link to="works" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Works</Link>
-        <Link to="Contact us" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
+        <Link to="contactus" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer ' >Contact us</Link>
       </div>
     </div>
   )

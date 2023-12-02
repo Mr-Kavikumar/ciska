@@ -22,7 +22,7 @@ function Home() {
                     the members of this trusts includes the students of <a href='https://www.cit.edu.in/' className='text-blue-800'>COIMBATORE INSTITUTE OF TECHNOLOGY</a>,
                     JANSON ENGINEEERING COLLEGE AND TAMILNADU ENGINEERING COLLEGE
                 </p>
-                <Link2 to='HomeExtended.js' spy={true} smooth={true} duration={500}>
+                <Link2 to='./HomeExtended' spy={true} smooth={true} duration={500}>
                     <Button title="see more" />
                 </Link2>
             </div>

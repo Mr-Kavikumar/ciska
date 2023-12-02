@@ -1,5 +1,6 @@
 import React from 'react'
 import Headings from './layout/Headings'
+import {Link as Link2} from 'react-router-dom'
 
 function Works() {
   return (

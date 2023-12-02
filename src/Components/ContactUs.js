@@ -2,6 +2,7 @@ import React from 'react'
 import Headings from './layout/Headings'
 import Button from './layout/Button'
 import logo from '../assets/Logo.png'
+import {Link as Link2} from 'react-router-dom'
 
 function ContactUs() {
     return (
