@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import Button from './layout/Button'
 import Headings from './layout/Headings'
-import logo from '../assets/Logo.png'
+import Poster from '../assets/Poster.png'
 
 function Register() {
     return (
-        <div className='md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14'>
+        <div className='md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-20 md:mx-32 mx-5 mt-14'>
             <div className='cursor-pointer w-full md:w-2/6  hidden md:block'>
-                <img src={logo}>
+                <img src={Poster}>
                 </img>
             </div>
             <div className='w-full md:w-2/4 text-center space-y-2'>
@@ -21,12 +21,12 @@ function Register() {
                     Make sure to list them in reverse order as compared to min-width breakpoints so that they override each other as expected.
                     You can even create breakpoints with both min-width and max-width definitions if necessary, for example:
                 </p>
-                <Link to='' spy={true} smooth={true} duration={500}>
+                <Link to='./RegisterExtended' spy={true} smooth={true} duration={500}>
                     <Button title="Register"></Button>
                 </Link>
             </div>
-            <div className='cursor-pointer h-40 w-40 flex justify-center  md:w-2/5 md:hidden'>
-                <img src={logo}>
+            <div className='cursor-pointer h-60 w-40 flex justify-center  md:w-2/5 md:hidden'>
+                <img src={Poster}>
                 </img>
             </div>
         </div>

@@ -7,6 +7,7 @@ import Register from './Components/Register';
 import Works from './Components/Works';
 import ContactUs from './Components/ContactUs';
 import { BrowserRouter, Route , Routes } from 'react-router-dom';
+import RegisterExtended from './Components/RegisterExtended';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/Register' element={<Register/>}/>
             <Route path='/Works' element={<Works/>}/>
             <Route path='/ContactUs' element={<ContactUs/>}/>
+            <Route path='/RegisterExtended' element={<RegisterExtended/>}/>
           </Routes>
         </BrowserRouter>
   );

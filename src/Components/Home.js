@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link as Link1 } from 'react-scroll'
 import {Link as Link2} from 'react-router-dom'
 import Button from './layout/Button'
 import logo from '../assets/Logo.png'
