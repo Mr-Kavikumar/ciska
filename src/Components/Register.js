@@ -7,7 +7,7 @@ import logo from '../assets/Logo.png'
 function Register() {
     return (
         <div className='md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14'>
-            <div className='cursor-pointer w-full md:w-2/4  hidden md:block'>
+            <div className='cursor-pointer w-full md:w-2/6  hidden md:block'>
                 <img src={logo}>
                 </img>
             </div>
@@ -25,7 +25,7 @@ function Register() {
                     <Button title="Register"></Button>
                 </Link>
             </div>
-            <div className='cursor-pointer flex justify-center w-full md:w-2/4 md:hidden'>
+            <div className='cursor-pointer h-40 w-40 flex justify-center  md:w-2/5 md:hidden'>
                 <img src={logo}>
                 </img>
             </div>

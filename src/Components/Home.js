@@ -26,7 +26,7 @@ function Home() {
                     <Button title="see more" />
                 </Link2>
             </div>
-            <div className='w-full md:w-2/4 hidden md:block'>
+            <div className='w-full md:w-2/6 hidden md:block'>
                 <img src={logo} className='cursor-pointer flex justify-center'></img>
             </div>
         </div>

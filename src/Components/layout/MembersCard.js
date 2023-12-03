@@ -7,7 +7,7 @@ function MembersCard(props) {
             <div className='flex flex-col items-center justify-between bg-white border-2 
     border-yellow-300 md:w-full p-5 cursor-pointer rounded-lg '>
                 <div className='w-4/5'>
-                    <img src={props.img}>
+                    <img className='h-40 w-full'src={props.img}>
                     </img>
                 </div>
                 <div className='flex flex-row my-5 justify-content space-x-5'>
