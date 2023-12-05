@@ -10,7 +10,7 @@ const NavBar = () => {
   }
   return (
     <div>
-      <div className='flex fixed top-0 w-full justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+      <div className='flex md:fixed top-0 w-full justify-between p-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
         <div className='flex flex-row space-x-4 justify-center'>
           <img src={logo} className='h-10 w-10 cursor-pointer'></img>
           <Link to="/" className='font-semibold text-2xl p-1 cursor-pointer'>
@@ -31,7 +31,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className={`${menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+        } md:hidden  flex flex-col absolute bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
         <Link to="home" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Home</Link>
         <Link to="members" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Members</Link>
         <Link to="register" spy={true} smooth={true} duration={500} className='hover:text-yellow-300 transition-all cursor-pointer '>Register</Link>
