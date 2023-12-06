@@ -18,8 +18,8 @@ function RegisterExtended() {
                 <div className='w-[100%]'>
                     <img className='object-cover md:h-full' src={Poster}></img>
                 </div>
-                <div className='flex flex-col justify-center'>
-                    <form className='max-w-[400px] w-full mt-5 mb-5  mx-auto bg-purple-300 p-8 px-8 rounded-lg'>
+                <div className='flex flex-col justify-center mx-4 my-4'>
+                    <form className='max-w-[400px] w-full mx-auto bg-purple-300 p-8 px-8 rounded-lg'>
                         <Headings title1='Register' title2='Now' />
                         <div className='flex flex-col text-gray-600 py-2'>
                             <label>
