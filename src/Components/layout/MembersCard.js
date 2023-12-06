@@ -1,11 +1,13 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import "@splidejs/splide/css";
+import { Splide, SplideSlide } from "@splidejs/splide";
+
 
 function MembersCard(props) {
     return (
         <div>
             <div className='flex flex-col items-center justify-between bg-white border-2 
-    border-yellow-300 md:w-full p-5 cursor-pointer rounded-lg '>
+    border-yellow-300 w-full md:w-full p-5 cursor-pointer rounded-lg '>
                 <div className='w-4/5'>
                     <img className='h-40 w-full'src={props.img}>
                     </img>
