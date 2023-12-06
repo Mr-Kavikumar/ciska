@@ -15,7 +15,7 @@ function RegisterExtended() {
     return (
         <div className='min-h-screen bg-gradient-to-br from-yellow-300 to-yellow-100 h-auto  w-full'>
             <div className='flex flex-col gap-5'>
-                <div className='w-[100%]'>
+                <div className='w-[100%] px-4 pt-4'>
                     <img className='object-cover md:h-full' src={Poster}></img>
                 </div>
                 <div className='flex flex-col justify-center mx-4 my-4'>
