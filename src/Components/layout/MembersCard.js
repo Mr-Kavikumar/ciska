@@ -1,6 +1,4 @@
 import React from 'react'
-import "@splidejs/splide/css";
-import { Splide, SplideSlide } from "@splidejs/splide";
 
 
 function MembersCard(props) {

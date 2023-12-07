@@ -9,6 +9,7 @@ import ContactUs from './Components/ContactUs';
 import { BrowserRouter, Route , Routes } from 'react-router-dom';
 import RegisterExtended from './Components/RegisterExtended';
 import Payment from './Components/Payment';
+import '@splidejs/react-splide/css';
 
 
 function App() {
