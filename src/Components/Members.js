@@ -82,12 +82,14 @@ function Members() {
           batch="2021-2025"
         />
         </SplideSlide>
-        {/* <div className="flex flex-row items-center space-x-5 pr-5">
+        <SplideSlide>
+        <div className="flex flex-row items-center space-x-5 pr-5">
           <Link to="" spy={true} smooth={true} duration={500} className="relative">
             <Button title="SeeMore"></Button>
             <FaArrowRight size={16} className="cursor-pointer absolute top-[30px] right-2" />
           </Link>
-        </div> */}
+        </div>
+        </SplideSlide>
       </Splide>
       </div>
     </div>
