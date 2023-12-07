@@ -15,45 +15,45 @@ function RegisterExtended() {
     return (
         <div className='min-h-screen bg-gradient-to-br from-yellow-300 to-yellow-100 h-auto  w-full'>
             <div className='flex flex-col gap-5 md:flex md:flex-row'>
-                <div className='w-full px-4 pt-4 flex justify-center'>
-                    <img className='object-cover md:h-full' src={Poster}></img>
+                <div className='px-4 py-4 flex justify-center'>
+                    <img className='object-fit md:h-full' src={Poster}></img>
                 </div>
-                <div className='flex flex-col justify-center mx-4 my-4'>
-                    <form className='max-w-[400px] w-full mx-auto bg-purple-300 p-8 px-8 rounded-lg'>
+                <div className='flex flex-col justify-center mx-4 my-4 md:w-full'>
+                    <form className='w-full mx-auto bg-purple-300 p-8 px-8 rounded-lg '>
                         <Headings title1='Register' title2='Now' />
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col py-2'>
                             <label>
                                 Name:
                             </label>
-                            <input className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' type='text'>
+                            <input className='rounded-lg mt-2 p-2 focus:outline-black' type='text'>
                             </input>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 Contact Number:
                             </label>
-                            <input className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' type='number'>
+                            <input className='rounded-lg mt-2 p-2 focus:outline-black' type='number'>
                             </input>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 DOB:
                             </label>
-                            <input className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' type='Date'>
+                            <input className='rounded-lg mt-2 p-2  focus:outline-black' type='Date'>
                             </input>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 Age:
                             </label>
-                            <input className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' type='text'>
+                            <input className='rounded-lg mt-2 p-2  focus:outline-black' type='text'>
                             </input>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 Gender:
                             </label>
-                            <select className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' onChange={handleChange} label='Select Gender'>
+                            <select className='rounded-lg  mt-2 p-2 focus:outline-black' onChange={handleChange} label='Select Gender'>
                                 <option value='Male'>
                                     male
                                 </option>
@@ -65,11 +65,11 @@ function RegisterExtended() {
                                 </option>
                             </select>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 Category:
                             </label>
-                            <select className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' onChange={handleChange} label='Select Category'>
+                            <select className='rounded-lg  mt-2 p-2 focus:outline-black' onChange={handleChange} label='Select Category'>
                                 <option value='10K'>
                                     10K
                                 </option>
@@ -78,11 +78,11 @@ function RegisterExtended() {
                                 </option>
                             </select>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 T-Shirt Size:
                             </label>
-                            <select className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' onChange={handleChange} label='Select T-Shirt Size'>
+                            <select className='rounded-lg  mt-2 p-2 focus:outline-black' onChange={handleChange} label='Select T-Shirt Size'>
                                 <option value='XXL'>
                                     XXL
                                 </option>
@@ -103,11 +103,11 @@ function RegisterExtended() {
                                 </option>
                             </select>
                         </div>
-                        <div className='flex flex-col text-gray-600 py-2'>
+                        <div className='flex flex-col  py-2'>
                             <label>
                                 Blood Group:
                             </label>
-                            <select className='rounded-lg bg-gray-200 mt-2 p-2 focus-borde-blue focus:bg-gray-400 focus:outline-none' onChange={handleChange} label='Select Blood Group'>
+                            <select className='rounded-lg mt-2 p-2 focus:outline-black' onChange={handleChange} label='Select Blood Group'>
                                 <option value='A+'>
                                     A+
                                 </option>
@@ -131,7 +131,7 @@ function RegisterExtended() {
                                 </option>
                         </select>
                         </div>
-                        <Link to='./RegisterExtended' spy={true} smooth={true} duration={500}>
+                        <Link to='./Payment' spy={true} smooth={true} duration={500}>
                             <Button title="Register"></Button>
                          </Link>
                     </form>
