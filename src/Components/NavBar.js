@@ -73,7 +73,7 @@ const NavBar = () => {
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden  flex flex-col fixed bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+        } md:hidden  flex flex-col fixed bg-white left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 z-1000`}
       >
         <Link
           onClick={handeChange}
