@@ -12,6 +12,10 @@ function Works() {
     <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5">
       <div className="flex flex-col items-center lg:flex-row justify-between">
         <Headings title1="Our" title2="Works"></Headings>
+      
+          <Link to="" spy={true} smooth={true} duration={500}>
+            <Button title="See All Works"></Button>
+          </Link>
       </div>
       <div className="flex flex-row gap-5 pt-14 overflow-x-auto">
         <WorksCard
