@@ -51,11 +51,7 @@ function Members() {
             <Button title="See All Member"></Button>
           </Link>
     </div>
-    {/* {/* <div className="flex flex-row justify-center gap-2 py-4 ">
-        <button className="bg-purple-300 px-4 py-2 rounded-lg">move left</button>
-        <button className="bg-purple-300 px-4 py-2 rounded-lg">move right</button>
-    </div> */}
-      <div className="items-center flex flex-row gap-6 mt-6 overflow-x-auto">
+      <div className="items-center flex flex-row gap-6 mt-6 overflow-auto scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-slate-700">
         <MembersCard
           img={kavikumar}
           name="kavikumar"

@@ -17,7 +17,7 @@ function Works() {
             <Button title="See All Works"></Button>
           </Link>
       </div>
-      <div className="flex flex-row gap-5 pt-14 overflow-x-auto">
+      <div className="flex flex-row gap-5 pt-14 overflow-auto scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-slate-700">
         <WorksCard
           image={kavikumar}
           title="kavikumar"
