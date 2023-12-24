@@ -3,51 +3,16 @@ import Headings from "./layout/Headings";
 import MembersCard from "./layout/MembersCard";
 import kavikumar from "../assets/kavikumar.jpg";
 import Button from "./layout/Button";
-import { Link } from "react-scroll";
-import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import Ganesh from "../assets/Ganesh.jpg"
 
 
 function Members() {
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
   return (
-    <div className="min-h-screen flex-col items-center md:px-32 px-5 my-10">
+    <div className="flex-col items-center md:px-32 px-5 my-10">
     <div className="flex flex-col items-center md:flex md:flex-row md:justify-between">
     <Headings title1="Our" title2="Members"></Headings>
-          <Link className="md:block" to="" spy={true} smooth={true} duration={500}>
+          <Link className="md:block" to="./AllMembers" spy={true} smooth={true} duration={500}>
             <Button title="See All Member"></Button>
           </Link>
     </div>

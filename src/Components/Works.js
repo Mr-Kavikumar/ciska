@@ -4,7 +4,6 @@ import Button from "./layout/Button";
 import kavikumar from "../assets/kavikumar.jpg";
 import Ganesh from "../assets/Ganesh.jpg";
 import WorksCard from "./layout/WorksCard";
-import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
 function Works() {
@@ -30,6 +29,21 @@ function Works() {
         />
         <WorksCard
           image={kavikumar}
+          title="kavikumar"
+          para="cvbnbgbigbakdfbnxbmgiepitgjkngknfjkadijgbiadpbjadfjibadjfgbkjdfgbkdb"
+        />
+        <WorksCard
+          image={Ganesh}
+          title="kavikumar"
+          para="cvbnbgbigbakdfbnxbmgiepitgjkngknfjkadijgbiadpbjadfjibadjfgbkjdfgbkdb"
+        />
+          <WorksCard
+          image={kavikumar}
+          title="kavikumar"
+          para="cvbnbgbigbakdfbnxbmgiepitgjkngknfjkadijgbiadpbjadfjibadjfgbkjdfgbkdb"
+        />
+        <WorksCard
+          image={Ganesh}
           title="kavikumar"
           para="cvbnbgbigbakdfbnxbmgiepitgjkngknfjkadijgbiadpbjadfjibadjfgbkjdfgbkdb"
         />

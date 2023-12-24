@@ -9,7 +9,7 @@ import ContactUs from './Components/ContactUs';
 import { BrowserRouter, Route , Routes } from 'react-router-dom';
 import RegisterExtended from './Components/RegisterExtended';
 import Payment from './Components/Payment';
-import '@splidejs/react-splide/css';
+import AllMembers from './Components/AllMembers';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
             <Route path='/ContactUs' element={<ContactUs/>}/>
             <Route path='/RegisterExtended' element={<RegisterExtended/>}/>
             <Route path='/RegisterExtended/Payment' element={<Payment/>}/>
+            <Route path='/AllMembers' element={<AllMembers/>}/>
           </Routes>
         </BrowserRouter>
   );
