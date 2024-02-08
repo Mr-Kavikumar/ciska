@@ -1,85 +1,162 @@
 import React from "react";
 import Headings from "./layout/Headings";
-import MembersCard from "./layout/MembersCard";
 import kavikumar from "../assets/kavikumar.jpg";
 import Button from "./layout/Button";
 import { Link } from "react-router-dom";
-import Ganesh from "../assets/Ganesh.jpg"
+import Ganesh from "../assets/Ganesh.jpg";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
+const membersData = [
+  {
+    img: kavikumar,
+    name: "Kavikumar",
+    job: "Software developer",
+    institution: "CIT",
+    event: "10,Half Marathon",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2020-2024",
+  },
+  {
+    img: Ganesh,
+    name: "GaneshMoorthy",
+    job: "Mechanical Engineer",
+    institution: "CIT",
+    event: "Deca,110 Hurdles",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2021-2025",
+  },
+  {
+    img: kavikumar,
+    name: "Kavikumar",
+    job: "Software developer",
+    institution: "CIT",
+    event: "10,Half Marathon",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2020-2024",
+  },
+  {
+    img: Ganesh,
+    name: "GaneshMoorthy",
+    job: "Mechanical Engineer",
+    institution: "CIT",
+    event: "Deca,110 Hurdles",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2021-2025",
+  },
+  {
+    img: kavikumar,
+    name: "Kavikumar",
+    job: "Software developer",
+    institution: "CIT",
+    event: "10,Half Marathon",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2020-2024",
+  },
+  {
+    img: Ganesh,
+    name: "GaneshMoorthy",
+    job: "Mechanical Engineer",
+    institution: "CIT",
+    event: "Deca,110 Hurdles",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2021-2025",
+  },
+  {
+    img: kavikumar,
+    name: "Kavikumar",
+    job: "Software developer",
+    institution: "CIT",
+    event: "10,Half Marathon",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2020-2024",
+  },
+  {
+    img: Ganesh,
+    name: "GaneshMoorthy",
+    job: "Mechanical Engineer",
+    institution: "CIT",
+    event: "Deca,110 Hurdles",
+    contact: "ckavikumar2k@gmail.com",
+    batch: "2021-2025",
+  },
+];
+const splideOptions = {
+  perPage: 4,
+  perMove: 1,
+  type: "loop",
+  gap: "1rem",
+  pagination: false,
+  breakpoints: {
+    // Large screens (1200px and above)
+    1200: { perPage: 2.5 },
+    // Medium screens (991px to 1199px)
+    991: { perPage: 2 },
+    // Small screens (768px to 990px)
+    768: { perPage: 1.5 },
+    // Extra small screens (500px to 767px)
+    500: { perPage: 1 },
+    // Mobile screens (less than 500px)
+    425: { perPage: 1 },
+  },
+};
 
-function Members() {
+const Members = () => {
   return (
-    <div className="flex-col items-center md:px-32 px-5 my-10">
-    <div className="flex flex-col items-center md:flex md:flex-row md:justify-between">
-    <Headings title1="Our" title2="Members"></Headings>
-          <Link className="md:block" to="./AllMembers" spy={true} smooth={true} duration={500}>
-            <Button title="See All Member"></Button>
-          </Link>
-    </div>
-      <div className="items-center flex flex-row gap-6 mt-6 overflow-auto scrollbar-thin scrollbar-thumb-purple-400 scrollbar-track-slate-700">
-        <MembersCard
-          img={kavikumar}
-          name="kavikumar"
-          job="Software developer"
-          institution="CIT"
-          event="10,Half Marathon"
-          contact="ckavikumar2k@gmail.com"
-          batch="2020-2024"
-        />
-    
-        <MembersCard
-          img={Ganesh}
-          name="GaneshMoorthy"
-          job="Mechanical Engineer"
-          institution="CIT"
-          event="Deca,110 Hurdles"
-          contact="ckavikumar2k@gmail.com"
-          batch="2021-2025"
-        />
-     
-        <MembersCard
-          img={kavikumar}
-          name="kavikumar"
-          job="Software developer"
-          institution="CIT"
-          event="10,Half Marathon"
-          contact="ckavikumar2k@gmail.com"
-          batch="2020-2024"
-        />
-        
-        <MembersCard
-          img={Ganesh}
-          name="GaneshMoorthy"
-          job="Mechanical Engineer"
-          institution="CIT"
-          event="Deca,110 Hurdles"
-          contact="ckavikumar2k@gmail.com"
-          batch="2021-2025"
-        />
-      
-        <MembersCard
-          img={kavikumar}
-          name="kavikumar"
-          job="Software developer"
-          institution="CIT"
-          event="10,Half Marathon"
-          contact="ckavikumar2k@gmail.com"
-          batch="2020-2024"
-        />
-     
-        <MembersCard
-          img={Ganesh}
-          name="GaneshMoorthy"
-          job="Mechanical Engineer"
-          institution="CIT"
-          event="Deca,110 Hurdles"
-          contact="ckavikumar2k@gmail.com"
-          batch="2021-2025"
-        />
+    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
+      <div className="flex flex-col items-center lg:flex-row justify-between">
+        <Headings title1="Our" title2="Members" />
+        <Link to="" spy={true} smooth={true} duration={500}>
+          <Button title="See All Works" />
+        </Link>
+      </div>
+      <div className="mt-4 ">
+        <Splide options={splideOptions}>
+          {membersData.map((member, i) => (
+            <SplideSlide key={i}>
+              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img
+                    className="rounded-t-lg h-[300px] w-full"
+                    src={member.img}
+                    alt=""
+                  />
+                </a>
 
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center items-center pb-2">
+                    {member.name}
+                  </h5>
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                    <span className=" font-semibold text-white">Job :</span>{" "}
+                    {member.job}
+                  </p>
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                    <span className=" font-semibold text-white">
+                      Institution :
+                    </span>
+                    {member.institution}
+                  </p>
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                    <span className=" font-semibold text-white">Event : </span>
+                    {member.event}
+                  </p>
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                    <span className=" font-semibold text-white">Contact :</span>
+                    {member.contact}
+                  </p>
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                    <span className=" font-semibold text-white">Batch :</span>{" "}
+                    {member.batch}
+                  </p>
+                </div>
+              </div>
+            </SplideSlide>
+          ))}
+        </Splide>
       </div>
     </div>
   );
-}
+};
 
 export default Members;

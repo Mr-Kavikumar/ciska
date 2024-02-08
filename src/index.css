@@ -19,3 +19,7 @@ code {
 .slick-slide > div{
   margin: 0 10px;
 }
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  display: none;
+}
