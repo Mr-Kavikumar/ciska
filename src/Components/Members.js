@@ -84,7 +84,10 @@ const membersData = [
 const splideOptions = {
   perPage: 4,
   perMove: 1,
-  type: "loop",
+  type:"loop",
+  autoplay: true,
+  interval: 3000, // Autoplay interval in milliseconds
+  pauseOnHover: true,
   gap: "1rem",
   pagination: false,
   breakpoints: {
@@ -115,13 +118,13 @@ const Members = () => {
           {membersData.map((member, i) => (
             <SplideSlide key={i}>
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <div>
                   <img
                     className="rounded-t-lg h-[300px] w-full"
                     src={member.img}
                     alt=""
                   />
-                </a>
+                </div>
 
                 <div className="p-5">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center items-center pb-2">
