@@ -44,7 +44,7 @@ const splideOptions = {
   perMove: 1,
   type:"loop",
   autoplay: true,
-  interval: 3000, // Autoplay interval in milliseconds
+  interval: 4000, // Autoplay interval in milliseconds
   pauseOnHover: true,
   gap: "1rem",
   pagination: false,
@@ -76,7 +76,7 @@ const Members = () => {
       <Splide options={splideOptions}>
         {worksData.map((member, i) => (
           <SplideSlide key={i}>
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
             <div>
               <img
                 className="rounded-t-lg h-[300px] w-full"

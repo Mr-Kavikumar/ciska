@@ -86,7 +86,7 @@ const splideOptions = {
   perMove: 1,
   type:"loop",
   autoplay: true,
-  interval: 3000, // Autoplay interval in milliseconds
+  interval: 4000, // Autoplay interval in milliseconds
   pauseOnHover: true,
   gap: "1rem",
   pagination: false,
