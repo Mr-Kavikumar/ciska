@@ -106,7 +106,7 @@ const splideOptions = {
 
 const Members = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
+    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
       <div className="flex flex-col items-center lg:flex-row justify-between">
         <Headings title1="Our" title2="Members" />
         <Link to="" spy={true} smooth={true} duration={500}>
@@ -120,35 +120,35 @@ const Members = () => {
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div>
                   <img
-                    className="rounded-t-lg h-[300px] w-full"
+                    className="rounded-t-lg h-[260px] w-full"
                     src={member.img}
                     alt=""
                   />
                 </div>
 
                 <div className="p-5">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center items-center pb-2">
+                  <h5 className="mb-2 text-2xl  font-bold tracking-tight text-gray-900 dark:text-white flex justify-center items-center pb-2">
                     {member.name}
                   </h5>
-                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400 text-sm">
                     <span className=" font-semibold text-white">Job :</span>{" "}
                     {member.job}
                   </p>
-                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400 text-sm">
                     <span className=" font-semibold text-white">
                       Institution :
                     </span>
                     {member.institution}
                   </p>
-                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400 text-sm">
                     <span className=" font-semibold text-white">Event : </span>
                     {member.event}
                   </p>
-                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400 text-sm">
                     <span className=" font-semibold text-white">Contact :</span>
                     {member.contact}
                   </p>
-                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 font-normal text-gray-700 dark:text-gray-400 text-sm">
                     <span className=" font-semibold text-white">Batch :</span>{" "}
                     {member.batch}
                   </p>

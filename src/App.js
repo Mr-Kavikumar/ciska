@@ -10,6 +10,8 @@ import { BrowserRouter, Route , Routes } from 'react-router-dom';
 import RegisterExtended from './Components/RegisterExtended';
 import Payment from './Components/Payment';
 import AllMembers from './Components/AllMembers';
+import Gallery1 from './Components/AllGallery/Gallery1';
+import Gallery2 from './Components/AllGallery/Gallery2';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path='/Members' element={<Members/>}/>
             <Route path='/Register' element={<Register/>}/>
             <Route path='/Works' element={<Works/>}/>
+            <Route path='/Gallery1' element={<Gallery1/>}/>
+            <Route path='/Gallery2' element={<Gallery2/>}/>
             <Route path='/ContactUs' element={<ContactUs/>}/>
             <Route path='/RegisterExtended' element={<RegisterExtended/>}/>
             <Route path='/RegisterExtended/Payment' element={<Payment/>}/>
