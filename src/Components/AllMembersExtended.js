@@ -121,11 +121,11 @@ const AllMembersExtended = () => {
         <Headings title1="Our" title2="Members" />
       </div>
       <div className="flex flex-col lg:flex-row mt-6 ">
-        <div className="max-w-5xl mt-4 lg:w-1/2 lg:pr-4">
+        <div className="max-w-5xl mt-4 lg:w-1/2 lg:pr-4 ">
           <img
             src={kavikumar}
             alt=""
-            className="mb-6 shadow-lg rounded-lg shadow-white w-full h-96"
+            className="mb-6  rounded-lg shadow-black shadow-lg w-full h-96"
           />
         </div>
 
@@ -138,11 +138,11 @@ const AllMembersExtended = () => {
           </p>
         </div>
       </div>
-      <div className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="mt-4 grid gap-4 grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {membersData.map((member, i) => (
           <div
             key={i}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            className="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-black shadow-lg"
           >
             <div>
               <img

@@ -73,7 +73,7 @@ const Works = () => {
     <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
       <div className="flex flex-col items-center lg:flex-row justify-between">
         <Headings title1="Our" title2="Works" />
-        <Link to="" spy={true} smooth={true} duration={500}>
+        <Link to="/WorksExtended" spy={true} smooth={true} duration={500}>
           <Button title="See All Works" />
         </Link>
       </div>
