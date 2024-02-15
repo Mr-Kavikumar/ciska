@@ -12,6 +12,7 @@ import Payment from './Components/Payment';
 import AllMembers from './Components/AllMembers';
 import Gallery1 from './Components/AllGallery/Gallery1';
 import Gallery2 from './Components/AllGallery/Gallery2';
+import AllMembersExtended from './Components/AllMembersExtended';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path='/RegisterExtended' element={<RegisterExtended/>}/>
             <Route path='/RegisterExtended/Payment' element={<Payment/>}/>
             <Route path='/AllMembers' element={<AllMembers/>}/>
+            <Route path='/AllMembersExtended' element={<AllMembersExtended/>}/>
           </Routes>
         </BrowserRouter>
   );

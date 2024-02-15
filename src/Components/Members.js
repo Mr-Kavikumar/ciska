@@ -109,8 +109,8 @@ const Members = () => {
     <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
       <div className="flex flex-col items-center lg:flex-row justify-between">
         <Headings title1="Our" title2="Members" />
-        <Link to="" spy={true} smooth={true} duration={500}>
-          <Button title="See All Works" />
+        <Link to="/AllMembersExtended" spy={true} smooth={true} duration={500}>
+          <Button title="See All Members" />
         </Link>
       </div>
       <div className="mt-4 ">
@@ -120,7 +120,7 @@ const Members = () => {
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div>
                   <img
-                    className="rounded-t-lg h-[260px] w-full"
+                    className="rounded-t-lg h-[220px] w-full"
                     src={member.img}
                     alt=""
                   />
