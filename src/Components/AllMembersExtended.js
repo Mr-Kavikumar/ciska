@@ -116,8 +116,8 @@ const membersData = [
 
 const AllMembersExtended = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 ">
-      <div className="flex flex-col items-center lg:flex-row justify-center m-5">
+    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 m-5">
+      <div className="flex flex-col items-center lg:flex-row justify-center m-2">
         <Headings title1="Our" title2="Members" />
       </div>
       <div className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

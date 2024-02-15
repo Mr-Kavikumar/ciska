@@ -77,7 +77,6 @@ const Works = () => {
           <Button title="See All Works" />
         </Link>
       </div>
-
       <div className="mt-4">
         <Splide options={splideOptions}>
           {worksData.map((member, i) => (
