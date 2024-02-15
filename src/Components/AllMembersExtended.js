@@ -120,6 +120,24 @@ const AllMembersExtended = () => {
       <div className="flex flex-col items-center lg:flex-row justify-center m-2">
         <Headings title1="Our" title2="Members" />
       </div>
+      <div className="flex flex-col lg:flex-row mt-6 ">
+        <div className="max-w-5xl mt-4 lg:w-1/2 lg:pr-4">
+          <img
+            src={kavikumar}
+            alt=""
+            className="mb-6 shadow-lg rounded-lg shadow-white w-full h-96"
+          />
+        </div>
+
+        <div className="max-w-5xl m-4 lg:w-1/2">
+          <div className="mb-6">
+            <h1 className="text-5xl tracking-widest">Coach</h1>
+          </div>
+          <p className="mb-6 text-xl">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit quas, delectus rem deserunt accusamus temporibus, fugiat mollitia provident beatae totam necessitatibus, quos tenetur. Doloremque, a voluptates beatae sed accusamus explicabo voluptatem quae delectus, excepturi enim vitae ratione cupiditate, ab nam sit aperiam? Alias praesentium, excepturi maxime omnis amet, fugiat quas ratione voluptatibus libero optio vitae ex facere vel saepe ad impedit molestias commodi voluptas! Ea minima velit autem quidem?
+          </p>
+        </div>
+      </div>
       <div className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {membersData.map((member, i) => (
           <div
