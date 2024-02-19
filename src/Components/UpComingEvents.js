@@ -50,6 +50,9 @@ const UpComingEventsData = [
 const UpComingEvents = () => {
   return (
     <div>
+      <div className="flex flex-col items-center lg:flex-row justify-center m-5">
+        <Headings title1="UpComing" title2=" Events" />
+      </div>
       {UpComingEventsData.map((event) => (
         <div
           key={event.id}
