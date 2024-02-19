@@ -14,6 +14,7 @@ import Gallery1 from './Components/AllGallery/Gallery1';
 import Gallery2 from './Components/AllGallery/Gallery2';
 import AllMembersExtended from './Components/AllMembersExtended';
 import WorksExtended from './Components/WorksExtended';
+import UpComingEvents from './Components/UpComingEvents';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path='/Home' element={<Home/>}/>
             <Route path='/Members' element={<Members/>}/>
             <Route path='/Register' element={<Register/>}/>
+            <Route path='/UpComingEvents' element={<UpComingEvents/>}/>
             <Route path='/Works' element={<Works/>}/>
             <Route path='/WorksExtended' element={<WorksExtended/>}/>
             <Route path='/Gallery1' element={<Gallery1/>}/>
@@ -41,3 +43,4 @@ function App() {
 }
 
 export default App;
+
