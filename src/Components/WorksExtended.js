@@ -146,7 +146,7 @@ const WorksExtended = () => {
           >
             <div>
               <img
-                className="rounded-t-lg h-[220px] w-full object-cover"
+                className="rounded-t-lg h-[240px] w-full object-cover"
                 src={member.image}
                 alt=""
               />

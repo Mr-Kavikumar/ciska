@@ -120,7 +120,7 @@ const Members = () => {
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div>
                   <img
-                    className="rounded-t-lg h-[220px] w-full"
+                    className="rounded-t-lg h-[240px] w-full"
                     src={member.img}
                     alt=""
                   />

@@ -146,7 +146,7 @@ const AllMembersExtended = () => {
           >
             <div>
               <img
-                className="rounded-t-lg h-[220px] w-full"
+                className="rounded-t-lg h-[240px] w-full"
                 src={member.img}
                 alt=""
               />

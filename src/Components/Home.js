@@ -10,7 +10,7 @@ function Home() {
             <div className='md:w-2/4 text-center'>
                 <h2 className='text-5xl font-semibold leading-tight'>CISKA</h2>
                 <div className='flex justify-center pt-5 pb-5'>
-                    <img src={logo} className='h-40 w-40 cursor-pointer flex justify-center md:hidden'></img>
+                    <img src={logo} className='h-40 w-40 cursor-pointer flex justify-center md:hidden' alt=''/>
                 </div>
 
                 <p className='text-gray-800 mt-5 text-start'>
@@ -26,7 +26,7 @@ function Home() {
                 </Link2>
             </div>
             <div className='w-full md:w-2/6 hidden md:block'>
-                <img src={logo} className='cursor-pointer flex justify-center'></img>
+                <img src={logo} className='cursor-pointer flex justify-center'alt=''/>
             </div>
         </div>
     )

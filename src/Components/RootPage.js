@@ -19,11 +19,11 @@ function RootPage() {
           <div id='register'>
             <Register />
           </div>
-          <div id='members'>
-            <Members />
-          </div>
           <div id='works'>
             <Works />
+          </div>
+          <div id='members'>
+            <Members />
           </div>
           <div id='contactus'>
             <ContactUs />
